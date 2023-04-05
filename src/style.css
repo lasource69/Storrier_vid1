@@ -1,0 +1,75 @@
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  opacity: 0.8;
+}
+
+.overlay img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 1);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* The only rule that matters */
+#video-background {
+  /* making the video fullscreen */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  opacity: 0.1;
+/*background: rgba(0, 0, 0, 0.5); --> /* Adjust the 0.5 value to control the darkness. */
+  z-index: -50;
+}
+
+/* These just style the content */
+article {
+  /* just a fancy border */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 8px solid rgba(255, 255, 255, 0.5);
+  margin: 10px;
+}
+
+h1 {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  font-size: 48px;
+  letter-spacing: 3px;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  text-align: center;
+}
+
+h1 span {
+  font-family: sans-serif;
+  letter-spacing: 12;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+h1 span a {
+  color: #fff;
+}
